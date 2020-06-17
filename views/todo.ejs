@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>todo</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="body">
+      <h3>Todo list</h3>
+      <form id="add" enctype="multipart/form-data">
+        <input type="text" id="input" placeholder="Add a todo" required />
+        <button type="submit">Submit</button>
+      </form>
+      <ul id="output">
+        <%data.forEach(thing=>{%>
+        <li><%=thing.item%></li>
+        <%})%>
+      </ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
+<!--the html view-->
